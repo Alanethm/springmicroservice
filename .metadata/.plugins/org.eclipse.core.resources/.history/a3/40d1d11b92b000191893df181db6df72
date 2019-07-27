@@ -1,0 +1,13 @@
+package com.app.edge;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EgdeCloudApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EgdeCloudApplication.class, args);
+	}
+
+}

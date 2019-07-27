@@ -1,0 +1,3 @@
+server.port=8085
+eureka.instance.hostname=server-service
+eureka.client.register-with-eureka=true

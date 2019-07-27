@@ -1,0 +1,40 @@
+package com.app.account;
+
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.annotation.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@SpringBootApplication
+public class AccountItemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AccountItemApplication.class, args);
+	}
+	
+}
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Entity
+
+class Account{
+	@Id
+	@GeneratedValue
+	private Long id;
+	
+	private String Vorname;
+	private String Nachname;
+	private String Aliasname;
+	
+}
